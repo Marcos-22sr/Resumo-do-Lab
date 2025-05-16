@@ -39,46 +39,52 @@ Os provedores de serviços nuvem eles operam em um modelo baseado no consumo, o 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Praticar o processo de criação e configuração de uma máquina virtual na plataforma Microsoft Azure.
+💰 Redução de Custos
+Com a computação em nuvem, elimina-se a necessidade de investimentos pesados em hardware e infraestrutura física. O modelo de pagamento conforme o uso permite que as empresas paguem apenas pelos recursos que realmente utilizam, convertendo despesas de capital (CapEx) em despesas operacionais (OpEx) .
 
-🖥️ Como Criar uma Máquina Virtual no Microsoft Azure (Windows)
+📈 Escalabilidade e Elasticidade
+A nuvem permite ajustar rapidamente os recursos de TI de acordo com as necessidades do negócio. Seja para lidar com picos de demanda ou para reduzir custos em períodos de baixa atividade, a escalabilidade é uma das principais vantagens .
 
-Acesse o Portal do Azure
-Vá para portal.azure.com e faça login com sua conta Microsoft. Se ainda não tiver uma conta, você pode criar uma gratuitamente com créditos iniciais.
+🌐 Acessibilidade e Mobilidade
+Os serviços em nuvem podem ser acessados de qualquer lugar com conexão à internet, facilitando o trabalho remoto e a colaboração entre equipes distribuídas geograficamente .
 
-Crie um Grupo de Recursos (opcional, mas recomendado)
-No menu lateral, clique em "Grupos de recursos" e depois em "+ Criar". Dê um nome ao grupo, como MeuGrupoVM, e escolha uma região próxima, como Brasil Sul.
+🔐 Segurança Aprimorada
+Provedores de nuvem investem significativamente em segurança, oferecendo recursos como criptografia de dados, autenticação multifator e monitoramento contínuo. Além disso, a centralização dos dados facilita a implementação de políticas de segurança .
 
-Inicie a Criação da Máquina
-No menu lateral, clique em "Máquinas virtuais" e depois em "+ Criar" > "Máquina virtual".
+⚙️ Atualizações e Manutenção Automatizadas
+Os provedores de serviços em nuvem cuidam das atualizações de software e manutenção da infraestrutura, garantindo que os sistemas estejam sempre atualizados e funcionando com desempenho otimizado .
 
-Configure os Detalhes Básicos
-Assinatura: Selecione sua assinatura do Azure. Grupo de Recursos: Escolha o grupo criado anteriormente. Nome da VM: Por exemplo, MinhaVM. Região: Escolha a mesma do grupo de recursos. Imagem: Selecione Windows Server 2022 Datacenter: Azure Edition - x64 Gen 2. Tamanho: Escolha um tamanho adequado às suas necessidades.
+🔄 Continuidade dos Negócios e Recuperação de Desastres
+A computação em nuvem oferece soluções robustas para backup e recuperação de dados, garantindo a continuidade das operações mesmo em casos de falhas ou desastres naturais .
+Oracle
 
-Configure a Conta de Administrador
-Nome de usuário: Por exemplo, azureuser. Senha: Crie uma senha segura com pelo menos 12 caracteres, incluindo letras maiúsculas, minúsculas, números e símbolos.
+🌱 Sustentabilidade
+Ao migrar para a nuvem, as empresas podem reduzir significativamente seu consumo de energia e a emissão de carbono, contribuindo para práticas mais sustentáveis .
 
-Configure as Regras de Porta de Entrada
-Em "Regras de porta de entrada", selecione "Permitir portas selecionadas". Escolha RDP (3389) para acesso remoto e, opcionalmente, HTTP (80) se desejar hospedar um site.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Revise e Crie a VM
-Clique em "Revisar + criar". Após a validação, clique em "Criar" para iniciar a implantação.
+☁️ IaaS – Infraestrutura como Serviço
+O que é: Fornece recursos de infraestrutura virtualizados, como servidores, armazenamento e redes, permitindo que empresas construam e gerenciem suas próprias plataformas e aplicações.
 
-Acesse sua Máquina Virtual
-Após a implantação, vá para a página da VM e clique em "Conectar" > "RDP". Baixe o arquivo .rdp e abra-o para iniciar a conexão. Insira o nome de usuário e a senha definidos anteriormente.
+Responsabilidades do cliente: Gerenciar sistemas operacionais, middleware, dados e aplicações.
+Exemplos: Microsoft Azure, Amazon Web Services (AWS), Google Cloud Platform.
 
-🌐 Instale um Servidor Web (Opcional)
+Quando usar: Ideal para empresas que necessitam de controle total sobre sua infraestrutura e desejam flexibilidade para configurar ambientes personalizados.
 
-Para testar a VM, você pode instalar o IIS (Internet Information Services):
+🛠️ PaaS – Plataforma como Serviço
+O que é: Oferece uma plataforma completa para desenvolvimento, teste e implantação de aplicações, sem a necessidade de gerenciar a infraestrutura subjacente.
+DIO
 
-Conecte-se à VM via RDP. Abra o PowerShell como administrador. Execute o comando:
+Responsabilidades do cliente: Desenvolver e gerenciar suas aplicações e dados.
+Exemplos: Google App Engine, Heroku, Microsoft Azure App Services.
 
-no powershell digite:
+Quando usar: Indicado para desenvolvedores que desejam focar na criação de aplicações sem se preocupar com a gestão de servidores e infraestrutura.
 
-Install-WindowsFeature -name Web-Server -IncludeManagementTools
+📦 SaaS – Software como Serviço
+O que é: Disponibiliza aplicações prontas para uso, acessíveis via internet, eliminando a necessidade de instalação e manutenção por parte do usuário.
+Cloud Treinamentos
 
-Após a instalação, abra um navegador e digite o endereço IP público da VM para ver a página padrão do IIS.
+Responsabilidades do cliente: Gerenciar o uso da aplicação, como configurações e dados inseridos.
+Exemplos: Microsoft 365, Google Workspace, Salesforce.
 
-🧹 Gerencie seus Recursos
-
-Desligamento Automático: Configure para evitar cobranças inesperadas. No portal da VM, vá em "Operações" > "Desligamento automático" e defina um horário. Exclusão de Recursos: Quando não precisar mais da VM, exclua o grupo de recursos para remover todos os recursos associados.
+Quando usar: Perfeito para empresas que buscam soluções prontas, com rápida implementação e sem a necessidade de gerenciar infraestrutura ou desenvolvimento.
