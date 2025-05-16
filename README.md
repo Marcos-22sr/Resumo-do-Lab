@@ -36,3 +36,49 @@ CapEx: (Despesas capital)
 Modelos baseados em consumo.
 
 Os provedores de serviços nuvem eles operam em um modelo baseado no consumo, o que significa que os usuários só pagam pelo que consome.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Praticar o processo de criação e configuração de uma máquina virtual na plataforma Microsoft Azure.
+
+🖥️ Como Criar uma Máquina Virtual no Microsoft Azure (Windows)
+
+Acesse o Portal do Azure
+Vá para portal.azure.com e faça login com sua conta Microsoft. Se ainda não tiver uma conta, você pode criar uma gratuitamente com créditos iniciais.
+
+Crie um Grupo de Recursos (opcional, mas recomendado)
+No menu lateral, clique em "Grupos de recursos" e depois em "+ Criar". Dê um nome ao grupo, como MeuGrupoVM, e escolha uma região próxima, como Brasil Sul.
+
+Inicie a Criação da Máquina
+No menu lateral, clique em "Máquinas virtuais" e depois em "+ Criar" > "Máquina virtual".
+
+Configure os Detalhes Básicos
+Assinatura: Selecione sua assinatura do Azure. Grupo de Recursos: Escolha o grupo criado anteriormente. Nome da VM: Por exemplo, MinhaVM. Região: Escolha a mesma do grupo de recursos. Imagem: Selecione Windows Server 2022 Datacenter: Azure Edition - x64 Gen 2. Tamanho: Escolha um tamanho adequado às suas necessidades.
+
+Configure a Conta de Administrador
+Nome de usuário: Por exemplo, azureuser. Senha: Crie uma senha segura com pelo menos 12 caracteres, incluindo letras maiúsculas, minúsculas, números e símbolos.
+
+Configure as Regras de Porta de Entrada
+Em "Regras de porta de entrada", selecione "Permitir portas selecionadas". Escolha RDP (3389) para acesso remoto e, opcionalmente, HTTP (80) se desejar hospedar um site.
+
+Revise e Crie a VM
+Clique em "Revisar + criar". Após a validação, clique em "Criar" para iniciar a implantação.
+
+Acesse sua Máquina Virtual
+Após a implantação, vá para a página da VM e clique em "Conectar" > "RDP". Baixe o arquivo .rdp e abra-o para iniciar a conexão. Insira o nome de usuário e a senha definidos anteriormente.
+
+🌐 Instale um Servidor Web (Opcional)
+
+Para testar a VM, você pode instalar o IIS (Internet Information Services):
+
+Conecte-se à VM via RDP. Abra o PowerShell como administrador. Execute o comando:
+
+no powershell digite:
+
+Install-WindowsFeature -name Web-Server -IncludeManagementTools
+
+Após a instalação, abra um navegador e digite o endereço IP público da VM para ver a página padrão do IIS.
+
+🧹 Gerencie seus Recursos
+
+Desligamento Automático: Configure para evitar cobranças inesperadas. No portal da VM, vá em "Operações" > "Desligamento automático" e defina um horário. Exclusão de Recursos: Quando não precisar mais da VM, exclua o grupo de recursos para remover todos os recursos associados.
