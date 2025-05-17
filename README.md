@@ -84,6 +84,23 @@ Quando usar: Indicado para desenvolvedores que desejam focar na criação de apl
 O que é: Disponibiliza aplicações prontas para uso, acessíveis via internet, eliminando a necessidade de instalação e manutenção por parte do usuário.
 Cloud Treinamentos
 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Como criar um grupo de recursos no azure
+
+✅ Usando o Portal Azure (interface gráfica)
+Acesse o Portal Azure.
+
+No menu lateral esquerdo, clique em "Grupos de recursos".
+Clique no botão "+ Criar" ou "Adicionar".
+
+Preencha os campos:
+Assinatura: Escolha a assinatura do Azure.
+Grupo de recursos: Dê um nome ao grupo (ex: meu-grupo-dev).
+Região: Escolha a região onde os recursos estarão localizados (ex: Brazil South).
+
+Clique em "Revisar + criar" e depois em "Criar".
+
 Responsabilidades do cliente: Gerenciar o uso da aplicação, como configurações e dados inseridos.
 Exemplos: Microsoft 365, Google Workspace, Salesforce.
 
