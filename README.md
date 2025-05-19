@@ -105,3 +105,44 @@ Responsabilidades do cliente: Gerenciar o uso da aplicação, como configuraçõ
 Exemplos: Microsoft 365, Google Workspace, Salesforce.
 
 Quando usar: Perfeito para empresas que buscam soluções prontas, com rápida implementação e sem a necessidade de gerenciar infraestrutura ou desenvolvimento.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+🖥️ Como criar uma máquina virtual no Azure
+Acesse o portal do Azure: Vá para https://portal.azure.com e faça login com sua conta.
+
+Navegue até "Máquinas virtuais": No menu lateral esquerdo, clique em "Máquinas virtuais" ou use a barra de pesquisa para encontrar essa opção.
+
+Inicie a criação da VM: Na página de Máquinas Virtuais, clique em "Criar" e selecione "Máquina virtual do Azure".
+
+
+Configure os detalhes da instância
+
+Nome da VM: Escolha um nome, por exemplo, MinhaVM.
+Região: Selecione a região mais próxima de você, como "Brasil Sul".
+Imagem: Escolha o sistema operacional desejado, como "Windows Server 2022 Datacenter: Azure Edition - x64 Gen 2".
+Tamanho: Selecione o tamanho da VM conforme suas necessidades.
+
+
+Configure a conta de administrador:
+
+Nome de usuário: Por exemplo, azureuser.
+Senha: Crie uma senha segura com pelo menos 12 caracteres.
+
+Defina as regras de porta de entrada:
+Em "Regras de porta de entrada", escolha "Permitir portas selecionadas".
+
+Selecione RDP (3389) para acesso remoto e HTTP (80) se planeja hospedar um site.
+
+
+Revise e crie a VM:
+
+Clique em "Examinar + criar".
+Após a validação, clique em "Criar" para iniciar a implantação da VM.
+Acesse a VM:
+Após a implantação, vá para a página da VM.
+
+Clique em "Conectar" e selecione "RDP".
+Baixe o arquivo RDP e abra-o para iniciar a conexão remota.
+Insira o nome de usuário e a senha que você definiu anteriormente.
+
